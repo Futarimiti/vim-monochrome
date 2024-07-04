@@ -15,7 +15,7 @@ let g:colors_name = 'monochrome'
 
 let s:white  = ['White', 15]
 let s:black  = ['#0e1111', 16]
-let s:bgray  = ['#181818', 233]
+let s:bgray  = ['NvimDarkGrey3', 233]
 let s:lgray  = ['LightGray', 255]
 let s:cgray  = ['#737373', 243]
 let s:dgray  = ['DarkGray', 248]
@@ -23,6 +23,7 @@ let s:sblue  = ['#778899', 67]
 let s:yellow = ['Yellow', 226]
 let s:red    = ['#b6403a', 160]
 let s:green  = ['#478226', 28]
+let s:dgreen = ['#719977', 2]
 
 let s:default_fg = s:lgray
 let s:default_bg = s:black
@@ -117,7 +118,8 @@ call s:hi('SignColumn')
 
 call s:hi('Statement', s:white, s:default_bg, s:bold)
 call s:hi('PreProc', s:white, s:default_bg, s:bold)
-call s:hi('String', s:sblue)
+call s:hi('String', s:dgreen)
+call s:hi('Character', s:dgreen)
 call s:hi('Comment', s:cgray, s:default_bg, s:comment_attr)
 call s:hi('Constant')
 call s:hi('Type', s:white, s:default_bg, s:bold)
